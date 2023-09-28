@@ -22,7 +22,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:4000/api/users";
+			const url = "https://hospitalmanagement-f5iw.onrender.com/api/users";
 			const { data: res } = await axios.post(url, data);
 			
 			toast.success(res.message, {

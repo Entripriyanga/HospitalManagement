@@ -12,7 +12,7 @@ const ForgotPassword = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = `http://localhost:4000/api/password-reset`;
+			const url = `https://hospitalmanagement-f5iw.onrender.com/api/password-reset`;
 			const { data } = await axios.post(url, { email });
 			
 			toast.success(data.message, {

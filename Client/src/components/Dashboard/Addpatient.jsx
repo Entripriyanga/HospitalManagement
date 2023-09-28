@@ -35,7 +35,7 @@ function Addpatient () {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:4000/api/registered', patient); // You would replace this with your actual backend endpoint
+      const response = await axios.post('https://hospitalmanagement-f5iw.onrender.com/api/registered', patient); // You would replace this with your actual backend endpoint
       toast.success('Patient saved successfully', {
         position: toast.POSITION.TOP_CENTER
       });

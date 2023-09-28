@@ -28,7 +28,7 @@ function EditPatient () {
 
   useEffect(() => {
     // Fetch data from your backend API
-    axios.get('http://localhost:4000/api/registered/getpatientdata')
+    axios.get('https://hospitalmanagement-f5iw.onrender.com/api/registered/getpatientdata')
       .then((response) => {
         setPatients(response.data);
       })
@@ -51,7 +51,7 @@ function EditPatient () {
   // Function to handle updating patient data
   const handleUpdate = () => {
     // Make an API call to update the patient data in the backend
-    axios.put(`http://localhost:4000/api/registered/updatepatient/${editedPatient.patient_id}`, editedPatient)
+    axios.put(`https://hospitalmanagement-f5iw.onrender.com/api/registered/updatepatient/${editedPatient.patient_id}`, editedPatient)
       
     .then((response) => {
         // Update the patient data in the state

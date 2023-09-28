@@ -24,7 +24,7 @@ function Deletepatient () {
 
   useEffect(() => {
     // Fetch data from your backend API
-    axios.get('http://localhost:4000/api/registered/getpatientdata')
+    axios.get('https://hospitalmanagement-f5iw.onrender.com/api/registered/getpatientdata')
       .then((response) => {
         setPatients(response.data);
       })
@@ -35,7 +35,7 @@ function Deletepatient () {
 
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/api/registered/deletepatient/${patientId}`, {
+      const response = await fetch(`https://hospitalmanagement-f5iw.onrender.com/api/registered/deletepatient/${patientId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

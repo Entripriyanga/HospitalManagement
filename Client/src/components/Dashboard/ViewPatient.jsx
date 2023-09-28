@@ -20,7 +20,7 @@ function ViewPatient() {
 
   useEffect(() => {
     // Fetch data from your backend API
-    axios.get('http://localhost:4000/api/registered/getpatientdata')
+    axios.get('https://hospitalmanagement-f5iw.onrender.com/api/registered/getpatientdata')
       .then((response) => {
         setPatients(response.data);
       })

@@ -17,7 +17,7 @@ function Header({OpenSidebar}) {
 	const history = useNavigate();
 
 	useEffect(() => {
-		fetch("http://localhost:4000/api/auth/userData", {
+		fetch("https://hospitalmanagement-f5iw.onrender.com/api/auth/userData", {
 		  method: "POST",
 		  crossDomain: true,
 		  headers: {

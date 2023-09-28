@@ -11,7 +11,7 @@ const PasswordReset = () => {
 	const [password, setPassword] = useState("");
 	
 	const param = useParams();
-	const url = `http://localhost:4000/api/password-reset/${param.id}/${param.token}`;
+	const url = `https://hospitalmanagement-f5iw.onrender.com/api/password-reset/${param.id}/${param.token}`;
 
 	useEffect(() => {
 		const verifyUrl = async () => {
