@@ -23,9 +23,9 @@ function App() {
 			<Route path="/forgot-password" element={<ForgotPassword />} />
 			<Route path="/password-reset/:id/:token" element={<PasswordReset />} />
 			<Route path="/add" element={<Addpatient/>}/>
-        		<Route path="/view" element={<ViewPatient/>}/>
-        		<Route path="/edit" element={<EditPatient/>}/>
-        		<Route path="/del" element={<Deletepatient/>}/>
+        	<Route path="/view" element={<ViewPatient/>}/>
+        	<Route path="/edit" element={<EditPatient/>}/>
+    		<Route path="/del" element={<Deletepatient/>}/>
        		</Routes>
 	)
 }
